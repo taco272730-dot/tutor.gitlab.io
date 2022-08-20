@@ -1,0 +1,14 @@
+.camera_wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.camera_commands{
+    display: none !important;
+}
+@media screen and (max-width: 1100px) {
+    .camera_prev,.camera_next{
+        opacity: 1 !important;
+    }
+}
