@@ -170,6 +170,10 @@ transform: translateY(0);
 .navBar.active .topOption li[data-select="true"] .bottomLine{
     background-color: #45c5c6;
 }
+.option-dadi{
+    margin-left: 5px;
+    transition: .5s;
+}
 .navBar_h5{
     display: none;
 }
@@ -200,7 +204,9 @@ transform: translateY(0);
     display: flex;
     height: 100%;
     align-items: center;
+    position: relative;
 }
+
 .navBar .topOption li{
     font-size: 16px;
     color: white;
@@ -210,7 +216,7 @@ transform: translateY(0);
     display: flex;
     align-items: center;
 }
-.navBar .topOption li a{
+.option-dad{
     padding: 42px 20px;
 }
 .navBar .topOption li .bottomLine{
@@ -223,7 +229,7 @@ transform: translateY(0);
     transform: translateX(-50%);
     transition: .5s;
 }
-.navBar .topOption li:hover,.navBar .topOption li[data-select="true"],.optionLine a[data-select="true"]{
+.navBar .topOption li:hover,.navBar .topOption li[data-select="true"]{
     color: #fefea1;
 }
 .navBar .topOption li:hover{
@@ -242,6 +248,123 @@ transform: translateY(0);
 }
 .navBar .topOption li[data-select="true"] .bottomLine{
     width: 100%;
+}
+.topOption li:hover .option-drawer{
+    max-height: 900px;
+}
+.topOption li:hover .option-dad i{
+    transform: rotate(180deg);
+}
+.option-drawer{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffffba;
+    backdrop-filter: blur(10px);
+    color: gray;
+    font-size: 14px;
+    border-radius: 0 0 10px 10px ;
+    box-shadow: 8px 10px 18px 0px #00000030;
+    overflow: hidden;
+    max-height: 0;
+    transition: .5s;
+}
+.option-drawer-inner{
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.mobile .option-drawer-inner{
+    padding: 3px 0;
+}
+.option-drawer h1{
+    text-align: center;
+    padding: 5px 20px ;
+    white-space: nowrap;
+    font-weight: normal;
+    cursor: pointer;
+    transition: .5s;
+}
+.option-drawer h1:hover{
+    background: #44c5c7;
+    color: white;
+}
+.option-drawer.mobile h1{
+    padding: 10px 0;
+}
+.option-drawer.mobile h1:hover{
+    background: unset;
+    color: unset;
+}
+.option-drawer h1 i{
+    margin-left: 5px;
+    transition: .5s;
+}
+.option-drawer.mobile{
+    position: relative;
+    background: #165e6d61;
+    color: #9eecfd;
+    box-shadow: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+    border-radius: 0;
+}
+.option-dad i{
+    margin-left: 5px;
+    transition: .5s;
+}
+.option-child{
+    position: relative;
+}
+.option-grands{
+    background: #00000024;
+    overflow: hidden;
+    max-height: 0;
+    transition: .5s;
+}
+.option-child[data-select="true"] .option-grands{
+    max-height: 400px;
+}
+.option-child[data-select="true"] .option-child-title i{
+    transform: rotate(180deg);
+}
+/* .option-child:hover .option-grands{
+    max-height: 400px;
+}
+.option-child:hover h1 i{
+    transform: rotate(180deg);
+} */
+.option-grand{
+    white-space: nowrap;
+    padding: 5px 20px ;
+    display: block;
+}
+.mobile .option-grand{
+    padding: 10px 0 ;
+}
+
+.option-grand:hover{
+    background: #44c5c7;
+    color: white;
+}
+.option-drawer.mobile .option-grand:hover{
+    background: unset;
+    color: unset;
+}
+.login-btn{
+    color: gray;
+    background-color: #fefea1;
+    padding: 8px 15px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+    margin: 0 10px;
+    transition: .5s;
+}
+.navBar.active .login-btn{
+    background: #44c5c6;
+    color: white;
 }
 .topView_h5{
     display: none;
@@ -524,6 +647,7 @@ transform: translateY(0);
 }
 .footer-icons{
     font-size: 30px;
+    color: #45c5c6;
 }
 .footer-icons a{
     margin-right: 20px;
@@ -1110,12 +1234,17 @@ video[poster]{
     .burgerBtn img{
         width: 40%;
     }
-
+    .optionLine-outer{
+        width: 100%;
+        position: relative;
+        overflow-y: scroll;
+        padding-top: 20px;
+    }
     .optionLine{
         position: fixed;
         width: 40vw;
         height: 100vh;
-        font-size: 20px;
+        /* font-size: 20px; */
         background: #229eb5e6;
         backdrop-filter: blur(9px);
         right: 0;
@@ -1133,8 +1262,22 @@ video[poster]{
         transform: translateX(0);
         opacity: 1;
     }
-    .optionLine a{
+    .option-child-h5{
+        width: 100%;
+        text-align: center;
+    }
+    .option-child-h5 h2{
         padding: 10px 0;
+    }
+    .option-child-h5 i{
+        margin-left: 5px;
+        transition: .5s;
+    }
+    .option-child-h5[data-select="true"] h2 i{
+        transform: rotate(180deg);
+    }
+    .mobile[data-select="true"] {
+        max-height: 800px;
     }
     .optionLine .closeBtn{
         position: absolute;
@@ -1265,7 +1408,15 @@ video[poster]{
     .link-content a{
         word-break: break-all;
     }
-
+    .login-btn{
+        padding: 12px 0;
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+    }
 }
 @media screen and (max-width: 940px) {
     .topView{
@@ -1329,6 +1480,7 @@ video[poster]{
     .optionLine{
         width: 60vw;
         transform: translateX(60vw);
+        font-size: 16px;
     }
     .activeBtn{
         width: 287px;
