@@ -339,6 +339,7 @@ transform: translateY(0);
     white-space: nowrap;
     padding: 5px 20px ;
     display: block;
+    transition: .5s;
 }
 .mobile .option-grand{
     padding: 10px 0 ;
@@ -1258,7 +1259,7 @@ video[poster]{
         opacity: 0;
         transition: .5s;
     }
-    .optionLine[data-open="true"]{
+    .optionLine[data-select="true"]{
         transform: translateX(0);
         opacity: 1;
     }

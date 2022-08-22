@@ -970,16 +970,16 @@
             });
 
     $('.burgerBtn').click(function(){
-        $(".optionLine").attr("data-open", "true")
+        $(".optionLine").attr("data-select", "true")
     });
     $(".closeBtn").click(function(){
-        $(".optionLine").attr("data-open", "false")
+        $(".optionLine").attr("data-select", "false")
     });
     // $(".optionLine a").click(function(){
-    //     $(".optionLine").attr("data-open", "false")
+    //     $(".optionLine").attr("data-select", "false")
     // });
     $(".logoZone").click(function(){
-        $(".optionLine").attr("data-open", "false")
+        $(".optionLine").attr("data-select", "false")
     });
 
     // 點擊空白處關閉選單(mobile)
@@ -990,7 +990,7 @@
         !btn.is(e.target) &&
         !btn.has(e.target).length
         ){
-            $(".optionLine").attr("data-open", "false");
+            $(".mobile,.option-child-h5,.optionLine").attr("data-select", "false");
         }
     });
 
@@ -1011,7 +1011,7 @@
         $(this).parent(".option-child-h5").children(".mobile").attr("data-select") == "true" ? $(this).parent(".option-child-h5").children(".mobile").attr("data-select", "false") : $(this).parent(".option-child-h5").children(".mobile").attr("data-select", "true");
     });
     $(".option-grand,.option-child-h5 a").on("click",function(){
-        $(".mobile").attr("data-select","false");
+        $(".mobile,.option-child-h5,.optionLine").attr("data-select","false");
     });
 
 
