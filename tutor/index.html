@@ -303,7 +303,10 @@
                             </h1>
                             <div data-aos="fade-up" data-aos-duration="1000">
                                 <a class="listen-btn" href="#">
+                                    <div class="listen-bg right"></div>
+                                    <div class="listen-bg left"></div>
                                     <h1>立即試聽</h1>
+                                    <div class="listen-line"></div>
                                     <figure>
                                         <i class="fa-solid fa-headphones-simple"></i>
                                     </figure>
@@ -326,7 +329,11 @@
                             <em>核心精選課程</em>
                             <div class="main-title__bar"></div>
                         </div>
-                        <a class="cheap-btn" href="#">限時優惠課程</a>
+                        <div class="cheap-btn">
+                            <div class="cheap-btn-bg animation-delay"></div>
+                            <div class="cheap-btn-bg"></div>
+                            <a href="#">限時優惠課程</a>
+                        </div>
                     </div>
                     <div class="slider-lessons slider-basic" data-aos="fade-left" data-aos-duration="1000">
                         <div class="slider-lessons-son son-basic">
@@ -603,6 +610,8 @@
                                 </li>
                             </aside>
                             <figure class="feature-center" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="center-circle fifth animation-delay"></div>
+                                <div class="center-circle forth"></div>
                                 <div class="center-circle third"></div>
                                 <div class="center-circle second"></div>
                                 <div class="center-circle first"></div>
@@ -738,10 +747,11 @@
     <div id="top">
         <a class="top_btn" href="#homeTop"><i class="fas fa-angle-up "></i></a>
     </div>
-    <a class="register" href="#">
-        <div class="register-circle">
-            <h1>免費註冊</h1>
-        </div>
+    <a class="register-pc" href="#">
+        <figure>
+            <i class="fa-solid fa-pen-clip"></i>
+        </figure>
+        <h1>免費註冊</h1>
     </a>
     <div class="fixed-zone">
         <a href="#"><i class="fa-solid fa-pen-clip"></i>免費註冊</a>
@@ -752,356 +762,356 @@
 
 
 
-<!--------------錨點滑動效果----------------->
-<script>
-    $("a[href='#homeTop']").click(function() {
-        $("html,body").animate({
-          scrollTop:$("#homeTop").offset().top,
-        }, "show");
-        return false;
-    });
-    $("a[href='#option01']").click(function() {
-        $("html,body").animate({
-          scrollTop:$("#option01").offset().top,
-        }, "show");
-        return false;
-    });
-    $("a[href='#option02']").click(function() {
-        $("html,body").animate({
-          scrollTop:$("#option02").offset().top,
-        }, "show");
-        return false;
-    });
-    $("a[href='#option03']").click(function() {
-        $("html,body").animate({
-          scrollTop:$("#option03").offset().top,
-        }, "show");
-        return false;
-    });
-    $("a[href='#option04']").click(function() {
-        $("html,body").animate({
-          scrollTop:$("#option04").offset().top,
-        }, "show");
-        return false;
-    });
-</script>
-<!--------------錨點滑動效果----------------->
+    <!--------------錨點滑動效果----------------->
+    <script>
+        $("a[href='#homeTop']").click(function() {
+            $("html,body").animate({
+            scrollTop:$("#homeTop").offset().top,
+            }, "show");
+            return false;
+        });
+        $("a[href='#option01']").click(function() {
+            $("html,body").animate({
+            scrollTop:$("#option01").offset().top,
+            }, "show");
+            return false;
+        });
+        $("a[href='#option02']").click(function() {
+            $("html,body").animate({
+            scrollTop:$("#option02").offset().top,
+            }, "show");
+            return false;
+        });
+        $("a[href='#option03']").click(function() {
+            $("html,body").animate({
+            scrollTop:$("#option03").offset().top,
+            }, "show");
+            return false;
+        });
+        $("a[href='#option04']").click(function() {
+            $("html,body").animate({
+            scrollTop:$("#option04").offset().top,
+            }, "show");
+            return false;
+        });
+    </script>
+    <!--------------錨點滑動效果----------------->
 
 
 
 
- 
- <script>
-
-    $('.slider-lessons').slick({
-    dots: true,
-    arrows:true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplayspeed: 500,
-    responsive: [
-        {
-        breakpoint: 1250,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            dots: true
-        }
-        },
-        {
-        breakpoint: 960,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            dots: true
-        }
-        },
-        {
-        breakpoint: 640,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true
-        }
-        }
-    ]
-    });
-    $('.slider-students').slick({
-    dots: true,
-    arrows:true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplayspeed: 500,
-    responsive: [
-        {
-        breakpoint: 1250,
-        settings: {
-            slidesToShow: 4,
-            slidesToScroll: 3,
-            dots: true
-        }
-        },
-        {
-        breakpoint: 960,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2,
-            dots: true
-        }
-        },
-        {
-        breakpoint: 640,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true
-        }
-        }
-    ]
-    });
-    $('.feature-zone.mobile').slick({
-    dots: true,
-    arrows:true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplayspeed: 500,
-    responsive: [
-        {
-        breakpoint: 1250,
-        settings: {
-            slidesToShow: 4,
-            slidesToScroll: 3,
-            dots: true
-        }
-        },
-        {
-        breakpoint: 960,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2,
-            dots: true
-        }
-        },
-        {
-        breakpoint: 640,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true
-        }
-        }
-    ]
-    });
-
-
-
-    AOS.init();
-    // ------------------滾輪效果-------------------
-
-    var scrollLast=0
-    $(window).scroll(function(){
-        let scrollNow=$(this).scrollTop()
-        // console.log(scrollNow)
-        // scrollLast
-        
-        if(scrollNow>scrollLast){
-            $(".navBar").addClass("active")
-            $(".logoH5Bg").addClass("active")
-            $(".header_content_h5 ul span").addClass("active")
-            $(".icon ul a").addClass("active")
-            $(".optionText a").addClass("active")
-        }
-        if(scrollNow<100){
-            $(".navBar").removeClass("active")
-            $(".logoH5Bg").removeClass("active")
-            $(".header_content_h5 ul span").removeClass("active")
-            $(".icon ul a").removeClass("active")
-            $(".optionText a").removeClass("active")
-        }
-        scrollLast=scrollNow
-        
-
-        if(scrollNow>800){
-            $('#top,#nav_top').fadeIn();
-            // $('#nav_top').fadeIn();
-        }else{
-            $('#top,#nav_top').fadeOut();
-            // $('#nav_top').fadeOut();
-        }
-    })
     
-    // ------------------滾輪效果結束-------------------
-    
-    // ------------------視差滾動-------------------
+    <script>
 
-    window.onload = function() {
-        lax.setup() // init
+        $('.slider-lessons').slick({
+        dots: true,
+        arrows:true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplayspeed: 500,
+        responsive: [
+            {
+            breakpoint: 1250,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 960,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true
+            }
+            }
+        ]
+        });
+        $('.slider-students').slick({
+        dots: true,
+        arrows:true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplayspeed: 500,
+        responsive: [
+            {
+            breakpoint: 1250,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 960,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true
+            }
+            }
+        ]
+        });
+        $('.feature-zone.mobile').slick({
+        dots: true,
+        arrows:true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplayspeed: 500,
+        responsive: [
+            {
+            breakpoint: 1250,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 960,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true
+            }
+            }
+        ]
+        });
 
-        const updateLax = () => {
-            lax.update(window.scrollY)
+
+
+        AOS.init();
+        // ------------------滾輪效果-------------------
+
+        var scrollLast=0
+        $(window).scroll(function(){
+            let scrollNow=$(this).scrollTop()
+            // console.log(scrollNow)
+            // scrollLast
+            
+            if(scrollNow>scrollLast){
+                $(".navBar").addClass("active")
+                $(".logoH5Bg").addClass("active")
+                $(".header_content_h5 ul span").addClass("active")
+                $(".icon ul a").addClass("active")
+                $(".optionText a").addClass("active")
+            }
+            if(scrollNow<100){
+                $(".navBar").removeClass("active")
+                $(".logoH5Bg").removeClass("active")
+                $(".header_content_h5 ul span").removeClass("active")
+                $(".icon ul a").removeClass("active")
+                $(".optionText a").removeClass("active")
+            }
+            scrollLast=scrollNow
+            
+
+            if(scrollNow>800){
+                $('#top,#nav_top').fadeIn();
+                // $('#nav_top').fadeIn();
+            }else{
+                $('#top,#nav_top').fadeOut();
+                // $('#nav_top').fadeOut();
+            }
+        })
+        
+        // ------------------滾輪效果結束-------------------
+        
+        // ------------------視差滾動-------------------
+
+        window.onload = function() {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
             window.requestAnimationFrame(updateLax)
         }
+        // ------------------視差滾動結束-------------------
 
-        window.requestAnimationFrame(updateLax)
-    }
-    // ------------------視差滾動結束-------------------
-
-    //----------------camera.js 輪播圖功能------------------
-    jQuery(function() {
-                jQuery('#camera_wrap_1').camera({
-                    time: 1000, // 幻燈片時間
-                    transPeriod: 2000, // 幻燈片 轉換 時間
-                    thumbnails: false, // 小圖示 (二擇一)
-                    pagination: false, // 分頁 (二擇一)
-                    fx: 'curtainSliceLeft,blindCurtainTopLeft,blindCurtainSliceTop', //轉場特效:  curtainTopLeft, curtainTopRight, curtainBottomLeft, curtainBottomRight, curtainSliceLeft, curtainSliceRight, blindCurtainTopLeft, blindCurtainTopRight, blindCurtainBottomLeft, blindCurtainBottomRight, blindCurtainSliceBottom, blindCurtainSliceTop, stampede, mosaic, mosaicReverse, mosaicRandom, mosaicSpiral, mosaicSpiralReverse, topLeftBottomRight, bottomRightTopLeft, bottomLeftTopRight, bottomLeftTopRight, scrollLeft, scrollRight, scrollHorz, scrollBottom, scrollTop 
-                    hover: true, // 游標停在上方時，暫停
-                    height: '50%', // 幻燈片高度
-                    loader: 'none'
+        //----------------camera.js 輪播圖功能------------------
+        jQuery(function() {
+                    jQuery('#camera_wrap_1').camera({
+                        time: 1000, // 幻燈片時間
+                        transPeriod: 2000, // 幻燈片 轉換 時間
+                        thumbnails: false, // 小圖示 (二擇一)
+                        pagination: false, // 分頁 (二擇一)
+                        fx: 'curtainSliceLeft,blindCurtainTopLeft,blindCurtainSliceTop', //轉場特效:  curtainTopLeft, curtainTopRight, curtainBottomLeft, curtainBottomRight, curtainSliceLeft, curtainSliceRight, blindCurtainTopLeft, blindCurtainTopRight, blindCurtainBottomLeft, blindCurtainBottomRight, blindCurtainSliceBottom, blindCurtainSliceTop, stampede, mosaic, mosaicReverse, mosaicRandom, mosaicSpiral, mosaicSpiralReverse, topLeftBottomRight, bottomRightTopLeft, bottomLeftTopRight, bottomLeftTopRight, scrollLeft, scrollRight, scrollHorz, scrollBottom, scrollTop 
+                        hover: true, // 游標停在上方時，暫停
+                        height: '50%', // 幻燈片高度
+                        loader: 'none'
+                    });
                 });
-            });
 
-    $('.burgerBtn').click(function(){
-        $(".optionLine").attr("data-select", "true")
-    });
-    $(".closeBtn").click(function(){
-        $(".optionLine").attr("data-select", "false")
-    });
-    // $(".optionLine a").click(function(){
-    //     $(".optionLine").attr("data-select", "false")
-    // });
-    $(".logoZone").click(function(){
-        $(".optionLine").attr("data-select", "false")
-    });
+        $('.burgerBtn').click(function(){
+            $(".optionLine").attr("data-select", "true")
+        });
+        $(".closeBtn").click(function(){
+            $(".optionLine").attr("data-select", "false")
+        });
+        // $(".optionLine a").click(function(){
+        //     $(".optionLine").attr("data-select", "false")
+        // });
+        $(".logoZone").click(function(){
+            $(".optionLine").attr("data-select", "false")
+        });
 
-    // 點擊空白處關閉選單(mobile)
-    $("body").on("click", function(e){  
-        var btn = $(".burgerBtn,.drawer-inside");
-        // 判斷點擊的地方不是DIV或按鈕
-        if(
-        !btn.is(e.target) &&
-        !btn.has(e.target).length
-        ){
-            $(".mobile,.option-child-h5,.optionLine").attr("data-select", "false");
-        }
-    });
-
+        // 點擊空白處關閉選單(mobile)
+        $("body").on("click", function(e){  
+            var btn = $(".burgerBtn,.drawer-inside");
+            // 判斷點擊的地方不是DIV或按鈕
+            if(
+            !btn.is(e.target) &&
+            !btn.has(e.target).length
+            ){
+                $(".mobile,.option-child-h5,.mobile .option-child,.optionLine").attr("data-select", "false");
+            }
+        });
 
 
-    // PC選單開關-----------------------------
-    $(".option-child").on("click",function(){
-        $(this).siblings().attr("data-select","false");
-        $(this).attr("data-select") == "true" ? $(this).attr("data-select", "false") : $(this).attr("data-select", "true");
-        // $(this).parent(".option-drawer-inner").parent(".mobile").attr("data-select", "false");
-    });
-    $(".topOption li").on("mouseleave",function(){
-        $(".option-child").attr("data-select","false");
-    });
 
-    // MOBILE選單開關-----------------------------
-    $(".option-child-h5 h2").on("click",function(){
-        $(this).parent(".option-child-h5").siblings().attr("data-select","false");
-        $(this).parent(".option-child-h5").siblings().children(".mobile").attr("data-select","false");
-        $(this).parent(".option-child-h5").attr("data-select") == "true" ? $(this).parent(".option-child-h5").attr("data-select", "false") : $(this).parent(".option-child-h5").attr("data-select", "true");
-        $(this).parent(".option-child-h5").children(".mobile").attr("data-select") == "true" ? $(this).parent(".option-child-h5").children(".mobile").attr("data-select", "false") : $(this).parent(".option-child-h5").children(".mobile").attr("data-select", "true");
-    });
-    $(".option-grand,.option-child-h5 a").on("click",function(){
-        $(".mobile,.option-child-h5,.optionLine").attr("data-select","false");
-    });
+        // PC選單開關-----------------------------
+        $(".option-child").on("click",function(){
+            $(this).siblings().attr("data-select","false");
+            $(this).attr("data-select") == "true" ? $(this).attr("data-select", "false") : $(this).attr("data-select", "true");
+            // $(this).parent(".option-drawer-inner").parent(".mobile").attr("data-select", "false");
+        });
+        $(".topOption li").on("mouseleave",function(){
+            $(".option-child").attr("data-select","false");
+        });
+
+        // MOBILE選單開關-----------------------------
+        $(".option-child-h5 h2").on("click",function(){
+            $(this).parent(".option-child-h5").siblings().attr("data-select","false");
+            $(this).parent(".option-child-h5").siblings().children(".mobile").attr("data-select","false");
+            $(this).parent(".option-child-h5").attr("data-select") == "true" ? $(this).parent(".option-child-h5").attr("data-select", "false") : $(this).parent(".option-child-h5").attr("data-select", "true");
+            $(this).parent(".option-child-h5").children(".mobile").attr("data-select") == "true" ? $(this).parent(".option-child-h5").children(".mobile").attr("data-select", "false") : $(this).parent(".option-child-h5").children(".mobile").attr("data-select", "true");
+        });
+        $(".option-grand,.option-child-h5 a").on("click",function(){
+            $(".mobile,.option-child-h5,.optionLine").attr("data-select","false");
+        });
 
 
-    //切換頁面----------------------------------------------
+        //切換頁面----------------------------------------------
 
-    //上方列表指向
-    // $(".option-home").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".home_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-home").attr("data-select","true");
-    // });
-    // $(".option-wireframe").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".wireframe_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-wireframe").attr("data-select","true");
-    // });
-    // $(".option-mobile").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".mobile_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-mobile").attr("data-select","true");
-    // });
-    // $(".option-desktop").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".desktop_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-desktop").attr("data-select","true");
-    // });
-    // $(".option-varied").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".varied_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-varied").attr("data-select","true");
-    // });
-    // $(".option-customized").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".customized_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-customized").attr("data-select","true");
-    // });
-    //點擊左上方logo跟footer logo回home
-    $(".logoZone,.contact,#top").on("click",function(){
-        $(".wrapper").siblings().attr("data-select","false");
-        $(".home_page").attr("data-select","true");
-        $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-        $(".option-home").attr("data-select","true");
-    });
-    //點擊首頁wireframe圖前往該頁
-    // $(".zone__image--wireframe").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".wireframe_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-wireframe").attr("data-select","true");
-    // });
-    //點擊首頁mobile圖前往該頁
-    // $(".zone__image--mobile").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".mobile_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-mobile").attr("data-select","true");
-    // });
-    //點擊首頁desktop圖前往該頁
-    // $(".zone__image--desktop").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".desktop_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-desktop").attr("data-select","true");
-    // });
-    //點擊首頁varied圖前往該頁
-    // $(".zone__image--varied").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".varied_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-varied").attr("data-select","true");
-    // });
-    //點擊首頁customized圖前往該頁
-    // $(".zone__image--customized").on("click",function(){
-    //     $(".wrapper").siblings().attr("data-select","false");
-    //     $(".customized_page").attr("data-select","true");
-    //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
-    //     $(".option-customized").attr("data-select","true");
-    // });
-    //切換頁面----------------------------------------------
+        //上方列表指向
+        // $(".option-home").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".home_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-home").attr("data-select","true");
+        // });
+        // $(".option-wireframe").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".wireframe_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-wireframe").attr("data-select","true");
+        // });
+        // $(".option-mobile").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".mobile_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-mobile").attr("data-select","true");
+        // });
+        // $(".option-desktop").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".desktop_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-desktop").attr("data-select","true");
+        // });
+        // $(".option-varied").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".varied_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-varied").attr("data-select","true");
+        // });
+        // $(".option-customized").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".customized_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-customized").attr("data-select","true");
+        // });
+        //點擊左上方logo跟footer logo回home
+        $(".logoZone,.contact,#top").on("click",function(){
+            $(".wrapper").siblings().attr("data-select","false");
+            $(".home_page").attr("data-select","true");
+            $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+            $(".option-home").attr("data-select","true");
+        });
+        //點擊首頁wireframe圖前往該頁
+        // $(".zone__image--wireframe").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".wireframe_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-wireframe").attr("data-select","true");
+        // });
+        //點擊首頁mobile圖前往該頁
+        // $(".zone__image--mobile").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".mobile_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-mobile").attr("data-select","true");
+        // });
+        //點擊首頁desktop圖前往該頁
+        // $(".zone__image--desktop").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".desktop_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-desktop").attr("data-select","true");
+        // });
+        //點擊首頁varied圖前往該頁
+        // $(".zone__image--varied").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".varied_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-varied").attr("data-select","true");
+        // });
+        //點擊首頁customized圖前往該頁
+        // $(".zone__image--customized").on("click",function(){
+        //     $(".wrapper").siblings().attr("data-select","false");
+        //     $(".customized_page").attr("data-select","true");
+        //     $(".topOption li,.optionLine a").siblings().attr("data-select","false");
+        //     $(".option-customized").attr("data-select","true");
+        // });
+        //切換頁面----------------------------------------------
 
-</script>
+    </script>
 
 
 
