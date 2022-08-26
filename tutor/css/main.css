@@ -1041,6 +1041,7 @@ video[poster]{
     transition: 0.5s;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 .listen-btn:hover{
     color: white;
@@ -1778,6 +1779,15 @@ video[poster]{
     }
     /* .zone:nth-child(even) .zone__image{
         order: unset;
+    } */
+    .listen-btn{
+        width: 100%;
+    }
+    /* .listen-btn figure,.listen-line{
+        display: none;
+    }
+    .listen-btn h1{
+        margin: 0 auto;
     } */
 }
 
