@@ -1231,6 +1231,33 @@ video[poster]{
 .fixed-zone{
     display: none;
 }
+.shopping{
+    position: relative;
+    padding: 10px;
+}
+.shopping i{
+    color: white;
+    font-size: 26px;
+    transition: .5s;
+}
+.shopping .shopping__number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
+    font-weight: normal;
+    background: red;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.navBar.active .shopping i{
+    color: #44c5c6;
+}
 @media screen and (max-width: 1440px) {
     .show-box__title h1{
         font-size: 45px;
@@ -1512,6 +1539,20 @@ video[poster]{
     }
     .listen-btn:hover .listen-line{
         background: #45c5c6;
+    }
+    .right-side{
+        display:flex;
+        align-items: center;
+    }
+    .right-side .shopping i{
+        color: #44c5c6;
+        font-size: 20px;
+    }
+    .right-side .shopping__number{
+        font-size: 0.01rem;
+        width: 20px;
+        height: 20px;
+        top: 0;
     }
 }
 @media screen and (max-width: 940px) {
