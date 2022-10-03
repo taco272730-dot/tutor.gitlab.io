@@ -449,7 +449,7 @@ transform: translateY(0);
 }
 .central{
     width: 80vw;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     box-sizing: border-box;
 }
